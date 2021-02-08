@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  padding: 16px;
+  background-color:white;
+}
+.a {
+  width:100%;
+  background-color:#ccecfc;
+  border:2px #1d204d solid;
+}
+
+
+.text{
+    text-align: center;
+    color:#b31f24;
+}
+.ad {
+    text-align: center;
+    color: #913d97;
+    
+}
+.topic {
+    color: #b31f24;
+    text-align: center;
+}
+.container2 {
+ background-color:white ;
+ padding:.5%;
+ border:.5px black solid;
+ 
+}
+table{
+   border:2px #ccecfc solid;
+   width: 100%;
+   text-align: left;
+}
+.withheight{
+    background-color:white ;
+ padding:.5%;
+ border:.5px black solid;
+ 
+  height: 300px;
+}
+ </style>
+    </head>
+    <body>
+      {{#each users}}
+        <div class="container">
+            <table class="a">
+                <tr>
+                <td><p style="text-align:center; font-size:20px;" class="text" ><b>  Vins Christian Womens College of Engineering
+                   </b></p>
+                    <p style="font-size:15px" class="ad"><b>
+                        Vins Nagar,Chunkankadai,<br>
+                        Nagercoil-629 807,<br>
+                        Kanyakumari District,Tamilnadu.<br>
+                        Phone Number: 9787747072<br>
+                        E-mail: vinswcceengg@gmail.com<br>
+                        Website:www.vinswomensengg.com</p></b></p>
+                       
+                      <p style="font-size:15px" class="topic"><b>Admission Form
+                    </b><hr></p>
+                    <div class="container2">
+                        <p><b>Candidate Name: {{this.name}}</b></p>
+                            </div> <br>
+                            <div class="container2">
+                                <p><b>Mail Id: {{this.mailid}}</b></p>
+                                    </div> <br>
+                                    <div class="container2">
+                                        <p><b> Contact No: {{this.fnum}}</b></p>
+                                            </div> <br>
+                                            <div class="container2">
+                                                <p><b>Address : {{this.address}} <br> {{this.pin}}</b></p>
+                                                    </div> <br>
+
+                                            <div class="container2">
+                                                <p><b>School Name: {{this.schoolname}}</b></p>
+                                                    </div> <br>
+                                                    <div class="container2">
+                                                        <p><b>Board of education: {{this.boe}}</b></p>
+                                                            </div> <br>
+                                                            <div class="container2">
+                                                                <p><b>HSC Mark: {{this.hsc}}</b></p>
+                                                                    </div> <br>
+                                                                    <div class="container2">
+                                                                        <p><b>Physics Mark: {{this.phymark}}</b></p>
+                                                                            </div> <br>
+                                                                            <div class="container2">
+                                                                                <p><b>Chemistry Mark: {{this.chemark}}</b></p>
+                                                                                    </div> <br>
+                                                                                    <div class="container2">
+                                                                                        <p><b>Maths mark: {{this.mathmark}}</b></p>
+                                                                                            </div> <br> 
+                                                            
+                                                      <div class="container2">
+                                                        <p><b> Prefferd Course: {{this.course}}</b></p>    
+                                                     </div><br>
+                                                     
+                                                            
+                                                            <div class="container2">
+                                                                <p><b>First Graduate : yes</b></p>
+                                                                    </div> <br>
+                                                                  
+                                                             
+                                                                     
+                                                                            <div class="container2">
+                                                                                <p><b>Tentative date to visit campus: {{this.date}}</b></p>
+                                                                                    </div> <br>
+                                                                                 
+                                                                                                
+                                                      <div class="container2">
+                                                        <p><b> Refferd througn: </b></p>    
+                                                     </div><br>
+                                                           
+                                                     <div class="container2">
+                                                        <p><b> If refferd through faculty, His/Her name & Department: {{this.course}}</b></p>    
+                                                     </div><br>
+                                                           
+                                                     <div class="container2">
+                                                        <p><b> For Further Clarification : <br> <p style="text-align:left;"> 
+                                                            Contact: <br>
+                                                            Vins Christian Womens College of Engineering<br>
+                                                            Vins Nagar,Chunkankadai,<br>
+                                                            Nagercoil-629 807,<br>
+                                                            Kanyakumari District,Tamilnadu.<br>
+                                                            Phone Number: 9787747072<br>
+                                                            E-mail: vinswcceengg@gmail.com<br>
+                                                            Website:www.vinswomensengg.com</p></b></p>    
+                                                     </div><br>
+                                                     
+                                                                                                              
+
+                   
+                    
+                                                     <!--<div class="withheight">
+                                                        <p><b> Additional Information: </b></p>    
+                                                     </div><br>--> 
+                                                                           
+                                                                             
+                                                                           
+              
+                    {{/each}}
+
+       
+    </body>
+</html>
